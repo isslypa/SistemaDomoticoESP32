@@ -120,9 +120,9 @@ Sistema de automatización domótica que permite el control remoto de dispositiv
 |------------|------------------|----------|
 | **ESP32 DevKit V1** | 38 pines, dual-core @ 240MHz | 1 |
 | **Módulo L298N** | Driver motor DC dual, 2A/canal | 1 |
-| **Motor DC** | 6V-12V con reductora | 1 |
+| **Motor DC** | 6V-12V | 1 |
 | **Sensor LM75** | Sensor temperatura I2C | 1 |
-| **Cables Jumper** | Macho-Macho | ~15 |
+| **Cables Jumper** | Macho-Macho | 15 |
 | **Cable USB** | Para programación ESP32 | 1 |
 
 ### Diagrama de Conexiones
@@ -249,9 +249,7 @@ ESP32 → PC: TEMP:24.50
 La documentación completa del proyecto incluye:
 
 - **[PROTOCOLO_COMUNICACION.md](Documentacion/PROTOCOLO_COMUNICACION.md)** - Especificación completa del protocolo serial
-- **[DOCUMENTACION_COMPLETA.md](Documentacion/DOCUMENTACION_COMPLETA.md)** - Documento técnico principal (~25 páginas)
-- **[GUIA_CAPTURAS.md](Documentacion/GUIA_CAPTURAS.md)** - Guía para documentar el funcionamiento
-- **[COMO_GENERAR_PDF.md](Documentacion/COMO_GENERAR_PDF.md)** - Instrucciones para exportar a PDF
+- **[DOCUMENTACION_COMPLETA.md](Documentacion/DOCUMENTACION_COMPLETA.md)** - Documento técnico principal
 - **[README.md](Documentacion/README.md)** - Índice de la documentación
 
 ### Documentación Técnica
@@ -264,7 +262,6 @@ El documento principal incluye:
 - ✅ Implementación del código
 - ✅ 10 casos de prueba documentados
 - ✅ Resultados y métricas de rendimiento
-- ✅ Conclusiones y mejoras futuras
 
 ---
 
