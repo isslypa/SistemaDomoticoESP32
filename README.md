@@ -8,7 +8,7 @@
 Sistema de automatización domótica que permite el control remoto de dispositivos electrónicos mediante comunicación serial entre una aplicación Windows Forms (C#) y un microcontrolador ESP32.
 
 ![Sistema Domótico](Documentacion/Capturas/06_Interfaz_Completa.png)
-*Interfaz principal del sistema (captura pendiente)*
+*Interfaz principal del sistema*
 
 ---
 
