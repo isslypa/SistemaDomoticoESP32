@@ -83,7 +83,7 @@ build/
 
 # Archivos específicos del proyecto
 *.pdf
-Documentacion/Capturas/README_CAPTURAS.md
+Documentacion/GUIA_CAPTURAS.md
 
 # Node modules (si se usa alguna herramienta Node.js)
 node_modules/
