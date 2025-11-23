@@ -314,8 +314,6 @@ ControlDomotico/
 ├── Documentacion/               # Documentación técnica
 │   ├── PROTOCOLO_COMUNICACION.md
 │   ├── DOCUMENTACION_COMPLETA.md
-│   ├── GUIA_CAPTURAS.md
-│   ├── README.md
 │   └── Capturas/               # Imágenes del sistema
 │
 ├── .gitignore                  # Archivos ignorados por Git
