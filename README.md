@@ -37,7 +37,6 @@ Sistema de automatización domótica que permite el control remoto de dispositiv
 - [Capturas](#-capturas)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Pruebas](#-pruebas)
-- [Contribuir](#-contribuir)
 - [Licencia](#-licencia)
 - [Autor](#-autor)
 
@@ -147,7 +146,7 @@ ESP32 DevKit V1
 ### Requisitos Previos
 
 - **Windows 10/11**
-- **Visual Studio 2022** (Community o superior)
+- **Visual Studio Code**
 - **.NET 8.0 SDK** ([Descargar](https://dotnet.microsoft.com/download))
 - **VSCode + PlatformIO** ([Instalar PlatformIO](https://platformio.org/install/ide?install=vscode))
 - **Driver USB-Serial** para ESP32 (CP2102 o CH340)
