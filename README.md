@@ -84,7 +84,7 @@ Sistema de automatización domótica que permite el control remoto de dispositiv
                        │
 ┌──────────────────────▼──────────────────────────────────────┐
 │                DISPOSITIVOS FÍSICOS                         │
-│    LED (GPIO2) | Motor L298N | Sensor LM75 (I2C)           │
+│    LED (GPIO2) | Motor L298N | Sensor LM75 (I2C)            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
