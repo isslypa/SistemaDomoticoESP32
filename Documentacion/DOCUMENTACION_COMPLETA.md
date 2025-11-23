@@ -423,70 +423,77 @@ void processCommand(const String& cmd) {
 | Cable USB | Para programación y alimentación | 1 |
 | Fuente Externa | 9V-12V para motor (opcional) | 1 |
 
-### 5.2 Diagrama de Conexiones
+### 5.2 Tabla Completa de Conexiones del Hardware
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                    ESP32 DevKit V1                           │
-│                                                              │
-│  GPIO2  ●────────────────────────────● LED Integrado        │
-│                                                              │
-│  GPIO23 ●──────┐                                            │
-│  GPIO19 ●──────┼─────────────────────┐                      │
-│  GPIO18 ●──────┼─────────────────────┼───────┐             │
-│                │                      │       │             │
-│  GPIO21 ●──────┼──────────────────────┼───────┼────┐        │
-│  GPIO22 ●──────┼──────────────────────┼───────┼────┼──┐     │
-│                │                      │       │    │  │     │
-│  GND    ●──────┼──────────────────────┼───────┼────┼──┼──┐  │
-│  5V     ●──────┼──────────────────────┼───────┼────┼──┼──┼─┐│
-│                │                      │       │    │  │  │ ││
-└────────────────┼──────────────────────┼───────┼────┼──┼──┼─┼┘
-                 │                      │       │    │  │  │ │
-                 │  ┌───────────────────┘       │    │  │  │ │
-                 │  │  ┌────────────────────────┘    │  │  │ │
-                 │  │  │  ┌─────────────────────────┘  │  │ │
-                 │  │  │  │                             │  │ │
-                 ↓  ↓  ↓  ↓                             ↓  ↓ ↓
-          ┌─────────────────────────┐         ┌──────────────────┐
-          │      Módulo L298N       │         │  Sensor LM75     │
-          │  ENA ●                  │         │  VCC  ●          │
-          │  IN1 ●                  │         │  GND  ●          │
-          │  IN2 ●                  │         │  SDA  ●          │
-          │  GND ●                  │         │  SCL  ●          │
-          │  OUT1 ●──┐              │         └──────────────────┘
-          │  OUT2 ●──┼──● Motor DC  │
-          └──────────┘              │
-```
+#### Conexiones del LED
 
-### 5.3 Tabla de Conexiones
+| Componente Origen | Pin Origen | Cable | Componente Destino | Pin Destino | Función |
+|-------------------|------------|-------|-------------------|-------------|---------|
+| ESP32 DevKit V1 | GPIO2 | - | LED Integrado | Ánodo | Control ON/OFF |
+| ESP32 DevKit V1 | GND | Negro | LED Integrado | Cátodo | Tierra |
 
-#### ESP32 → L298N (Motor)
+#### Conexiones del Motor DC (L298N)
 
-| Pin ESP32 | Pin L298N | Función |
-|-----------|-----------|---------|
-| GPIO23 | ENA | PWM (Velocidad) |
-| GPIO19 | IN1 | Dirección 1 |
-| GPIO18 | IN2 | Dirección 2 |
-| GND | GND | Tierra común |
+| Componente Origen | Pin Origen | Cable | Componente Destino | Pin Destino | Función |
+|-------------------|------------|-------|-------------------|-------------|---------|
+| ESP32 DevKit V1 | GPIO23 | Naranja | L298N | ENA | PWM - Control de velocidad |
+| ESP32 DevKit V1 | GPIO19 | Amarillo | L298N | IN1 | Control dirección 1 |
+| ESP32 DevKit V1 | GPIO18 | Verde | L298N | IN2 | Control dirección 2 |
+| ESP32 DevKit V1 | GND | Negro | L298N | GND | Tierra común |
+| L298N | OUT1 | Rojo | Motor DC | Terminal + | Alimentación motor |
+| L298N | OUT2 | Negro | Motor DC | Terminal - | Tierra motor |
+| Fuente Externa (9-12V) | + | Rojo | L298N | +12V | Alimentación motor |
+| Fuente Externa (9-12V) | - | Negro | L298N | GND | Tierra |
 
-#### ESP32 → LM75 (Temperatura)
+#### Conexiones del Sensor de Temperatura (LM75)
 
-| Pin ESP32 | Pin LM75 | Función |
-|-----------|----------|---------|
-| GPIO21 | SDA | Datos I2C |
-| GPIO22 | SCL | Clock I2C |
-| 5V | VCC | Alimentación |
-| GND | GND | Tierra |
+| Componente Origen | Pin Origen | Cable | Componente Destino | Pin Destino | Función |
+|-------------------|------------|-------|-------------------|-------------|---------|
+| ESP32 DevKit V1 | GPIO21 | Azul | LM75 | SDA | Datos I2C |
+| ESP32 DevKit V1 | GPIO22 | Blanco | LM75 | SCL | Clock I2C |
+| ESP32 DevKit V1 | 5V | Rojo | LM75 | VCC | Alimentación 5V |
+| ESP32 DevKit V1 | GND | Negro | LM75 | GND | Tierra |
 
-#### L298N → Motor DC
+#### Conexiones de Alimentación
 
-| Pin L298N | Motor DC |
-|-----------|----------|
-| OUT1 | Terminal + |
-| OUT2 | Terminal - |
+| Componente | Pin | Fuente | Voltaje | Notas |
+|------------|-----|--------|---------|-------|
+| ESP32 DevKit V1 | USB / VIN | PC / Adaptador | 5V | Alimentación principal |
+| LM75 | VCC | ESP32 (5V) | 5V | Puede usar 3.3V también |
+| L298N (Lógica) | 5V | ESP32 (5V) | 5V | Opcional si usa fuente externa |
+| L298N (Motor) | +12V | Fuente externa | 9-12V | Para el motor DC |
+| Motor DC | - | L298N OUT1/OUT2 | 6-12V | Según especificación |
 
-### 5.4 Especificaciones Técnicas
+### 5.3 Resumen de Pines Utilizados del ESP32
+
+| Pin GPIO | Función | Conectado a | Tipo de señal |
+|----------|---------|-------------|---------------|
+| GPIO2 | LED Control | LED Integrado | Digital Output |
+| GPIO18 | Motor IN2 | L298N IN2 | Digital Output |
+| GPIO19 | Motor IN1 | L298N IN1 | Digital Output |
+| GPIO21 | I2C SDA | LM75 SDA | I2C Data |
+| GPIO22 | I2C SCL | LM75 SCL | I2C Clock |
+| GPIO23 | Motor PWM | L298N ENA | PWM Output |
+| GND | Tierra | Común a todos | Ground |
+| 5V | Alimentación | LM75 VCC | Power |
+
+### 5.4 Notas Importantes de Conexión
+
+⚠️ **Advertencias**:
+- **NO** conectar el motor directamente al ESP32, siempre usar el driver L298N
+- **Verificar** polaridad de alimentación antes de conectar
+- **Tierra común**: Todos los GND deben estar conectados
+- **Voltaje del motor**: Verificar que sea compatible con tu motor DC (6-12V típico)
+- **Corriente**: El L298N soporta hasta 2A por canal
+
+✅ **Recomendaciones**:
+- Usar cables de colores diferentes para cada función
+- Etiquetar las conexiones
+- Verificar continuidad con multímetro
+- Probar cada componente individualmente antes de conectar todo
+- Usar fuente externa para el motor (no la USB del ESP32)
+
+### 5.5 Especificaciones Técnicas
 
 #### ESP32 DevKit V1
 - **Microcontrolador**: Espressif ESP32
