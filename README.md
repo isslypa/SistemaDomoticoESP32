@@ -381,7 +381,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 **Juan** - *Desarrollador Principal*
 
-- GitHub: [@TU_USUARIO](https://github.com/TU_USUARIO)
+- GitHub: [@isslypa](https://github.com/isslypa)
 
 ---
 
@@ -399,8 +399,8 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 ¿Tienes preguntas o problemas?
 
 - 📖 Lee la [Documentación Completa](Documentacion/DOCUMENTACION_COMPLETA.md)
-- 🐛 Reporta un [Issue](https://github.com/TU_USUARIO/ControlDomotico/issues)
-- 📧 Contacto: tu_email@ejemplo.com
+- 🐛 Reporta un [Issue](https://github.com/isslypa/SistemaDomoticoESP32/issues)
+- 📧 Contacto: GitHub [@isslypa](https://github.com/isslypa)
 
 ---
 
@@ -430,6 +430,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 **⭐ Si este proyecto te fue útil, considera darle una estrella ⭐**
 
-Hecho con ❤️ por [Juan](https://github.com/TU_USUARIO)
+Hecho con ❤️ por [Juan - @isslypa](https://github.com/isslypa)
 
 </div>
