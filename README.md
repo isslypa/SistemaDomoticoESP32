@@ -281,8 +281,6 @@ El documento principal incluye:
 
 ![Log Completo](Documentacion/Capturas/05_Log_Completo.png)
 
-> **Nota**: Las capturas se generarán siguiendo la [GUIA_CAPTURAS.md](Documentacion/GUIA_CAPTURAS.md)
-
 ---
 
 ## 📁 Estructura del Proyecto
