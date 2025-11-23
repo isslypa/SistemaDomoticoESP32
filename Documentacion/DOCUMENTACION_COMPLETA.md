@@ -477,26 +477,10 @@ void processCommand(const String& cmd) {
 | GND | Tierra | Común a todos | Ground |
 | 5V | Alimentación | LM75 VCC | Power |
 
-### 5.4 Notas Importantes de Conexión
-
-⚠️ **Advertencias**:
-- **NO** conectar el motor directamente al ESP32, siempre usar el driver L298N
-- **Verificar** polaridad de alimentación antes de conectar
-- **Tierra común**: Todos los GND deben estar conectados
-- **Voltaje del motor**: Verificar que sea compatible con tu motor DC (6-12V típico)
-- **Corriente**: El L298N soporta hasta 2A por canal
-
-✅ **Recomendaciones**:
-- Usar cables de colores diferentes para cada función
-- Etiquetar las conexiones
-- Verificar continuidad con multímetro
-- Probar cada componente individualmente antes de conectar todo
-- Usar fuente externa para el motor (no la USB del ESP32)
-
 ### 5.5 Especificaciones Técnicas
 
 #### ESP32 DevKit V1
-- **Microcontrolador**: Espressif ESP32
+- **Microcontrolador**: ESP32
 - **CPU**: Dual-core Tensilica LX6 @ 240 MHz
 - **RAM**: 520 KB SRAM
 - **Flash**: 4 MB
@@ -510,7 +494,6 @@ void processCommand(const String& cmd) {
 - **Voltaje motor**: 5V - 35V
 - **Corriente máxima**: 2A por canal
 - **Canales**: 2 (dual motor)
-- **Protección**: Diodos de flyback integrados
 
 #### Sensor LM75
 - **Protocolo**: I2C
@@ -858,29 +841,9 @@ Ver archivo: `Documentacion/Capturas/08_Hardware_ESP32.jpg`
 ### Anexo C: Protocolo de Comunicación Detallado
 
 Ver archivo: `Documentacion/PROTOCOLO_COMUNICACION.md`
-
-### Anexo D: Guía de Capturas
-
-Ver archivo: `Documentacion/GUIA_CAPTURAS.md`
-
 ---
 
 **Autor**: Juan Andres Gomez Ospina - Estudiante de Ingeniería Electrónica (4to Semestre)  l
 
 ---
-
-## Notas Finales
-
-Este documento ha sido creado para cumplir con los requisitos de documentación del proyecto de sistema domótico. Incluye todos los aspectos técnicos, arquitectura, implementación, pruebas y resultados obtenidos.
-
-El sistema ha demostrado ser robusto, funcional y extensible, cumpliendo con todos los objetivos planteados. La documentación del protocolo de comunicación permite a futuros desarrolladores entender y extender el sistema fácilmente.
-
-Para la generación del PDF, se recomienda convertir este archivo Markdown usando herramientas como:
-- Pandoc con plantilla LaTeX
-- Markdown to PDF en VSCode
-- Typora con exportación a PDF
-- Cualquier conversor online de Markdown a PDF
-
----
-
 **Fin del documento**
