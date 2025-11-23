@@ -1,7 +1,7 @@
 # Sistema de Control Domótico ESP32 + C#
 
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
-[![ESP32](https://img.shields.io/badge/ESP32-DevKit%20V1-E7352C?logo=espressif)](https://www.espressif.com/)
+[![ESP32](https://img.shields.io/badge/ESP32-DevKit%20V1-E7352C)](https://www.espressif.com/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows)](https://www.microsoft.com/windows)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
