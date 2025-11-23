@@ -115,23 +115,6 @@ TEMP:25.50
 | `ERR:OVERFLOW` | Desbordamiento de buffer | Comando demasiado largo (>80 caracteres) |
 
 ---
-
-## Secuencia de Inicialización
-
-Cuando el ESP32 se reinicia, envía automáticamente por serial:
-
-```
-READY
-ESP32 DevKit V1 - Sistema Domotico
-LED: GPIO2
-Motor: ENA=GPIO23, IN1=GPIO19, IN2=GPIO18
-I2C: SDA=GPIO21, SCL=GPIO22
-```
-
-Esta secuencia confirma que el sistema está listo para recibir comandos.
-
----
-
 ## Ejemplos de Interacción Completa
 
 ### Escenario 1: Encender lámpara y verificar
@@ -237,7 +220,7 @@ private void Sp_DataReceived(object sender, SerialDataReceivedEventArgs e)
 
 ---
 
-## Implementación en Arduino/ESP32
+## Implementación en ESP32
 
 ### Procesamiento de comandos
 
