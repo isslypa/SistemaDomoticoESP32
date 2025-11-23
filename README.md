@@ -154,8 +154,8 @@ ESP32 DevKit V1
 ### Clonar el Repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/ControlDomotico.git
-cd ControlDomotico
+git clone https://github.com/isslypa/SistemaDomoticoESP32.git
+cd SistemaDomoticoESP32
 ```
 
 ### Configurar Aplicación C#
@@ -349,9 +349,10 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 ## 👨‍💻 Autor
 
-**Juan** - *Desarrollador Principal*
+**Juan** - *Estudiante de Ingeniería Electrónica*
 
 - GitHub: [@isslypa](https://github.com/isslypa)
+- Universidad: Santo Tomas, 4to Semestre
 ---
 
 ## 📊 Estado del Proyecto

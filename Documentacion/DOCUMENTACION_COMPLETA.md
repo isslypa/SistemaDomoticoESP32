@@ -865,10 +865,7 @@ Ver archivo: `Documentacion/GUIA_CAPTURAS.md`
 
 ---
 
-**Documento elaborado por**: Sistema de Control Domótico ESP32 + C#  
-**Fecha de elaboración**: 23 de Noviembre de 2025  
-**Versión del documento**: 1.0  
-**Estado del proyecto**: Completado y Funcional
+**Autor**: Juan Andres Gomez Ospina - Estudiante de Ingeniería Electrónica (4to Semestre)  l
 
 ---
 
