@@ -346,28 +346,6 @@ El proyecto incluye 10 casos de prueba documentados:
 | T10 | Estrés | Comandos rápidos | ✅ PASS |
 
 > Ver detalles en [DOCUMENTACION_COMPLETA.md](Documentacion/DOCUMENTACION_COMPLETA.md#8-pruebas-realizadas)
-
----
-
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Para cambios importantes:
-
-1. Fork el proyecto
-2. Crear una rama (`git checkout -b feature/NuevaCaracteristica`)
-3. Commit los cambios (`git commit -m 'Agregar nueva característica'`)
-4. Push a la rama (`git push origin feature/NuevaCaracteristica`)
-5. Abrir un Pull Request
-
-### Áreas de Mejora
-
-- [ ] Soporte para múltiples motores y sensores
-- [ ] Sistema de automatización con horarios
-- [ ] Conectividad WiFi/Bluetooth
-- [ ] Gráficas en tiempo real
-- [ ] Aplicación móvil (Android/iOS)
-- [ ] Servidor web en ESP32
-
 ---
 
 ## 📄 Licencia
@@ -381,39 +359,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 **Juan** - *Desarrollador Principal*
 
 - GitHub: [@isslypa](https://github.com/isslypa)
-
----
-
-## 🙏 Agradecimientos
-
-- Comunidad de **ESP32**
-- Documentación de **Microsoft .NET**
-- Plataforma **PlatformIO**
-- Comunidad de **Arduino**
-
----
-
-## 📞 Soporte
-
-¿Tienes preguntas o problemas?
-
-- 📖 Lee la [Documentación Completa](Documentacion/DOCUMENTACION_COMPLETA.md)
-- 🐛 Reporta un [Issue](https://github.com/isslypa/SistemaDomoticoESP32/issues)
-- 📧 Contacto: GitHub [@isslypa](https://github.com/isslypa)
-
----
-
-## 🎯 Roadmap
-
-### Versión 2.0 (Futura)
-
-- [ ] **WiFi/Bluetooth**: Control remoto inalámbrico
-- [ ] **Base de Datos**: Historial de eventos
-- [ ] **Dashboard Web**: Interfaz web responsive
-- [ ] **Notificaciones**: Alertas por email/SMS
-- [ ] **API REST**: Integración con otros sistemas
-- [ ] **Machine Learning**: Automatización inteligente
-
 ---
 
 ## 📊 Estado del Proyecto
@@ -424,11 +369,3 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 ![Hardware](https://img.shields.io/badge/Hardware-Tested-green)
 
 ---
-
-<div align="center">
-
-**⭐ Si este proyecto te fue útil, considera darle una estrella ⭐**
-
-Hecho con ❤️ por [Juan - @isslypa](https://github.com/isslypa)
-
-</div>
